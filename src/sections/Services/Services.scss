@@ -1,0 +1,103 @@
+@import '../../sass/colors.scss';
+
+.service-section {
+    .service-title-text {
+        padding-top: 50px;
+        max-width: 600px;
+        margin: 0 0 0 auto;
+        font-weight: 500;
+    }
+
+    .services-link {
+        margin: 50px 0 30px;
+
+        a {
+            color: $color-blue;
+            text-decoration: none;
+            font-weight: 700;
+            background: #583fbc1e;
+            padding: 15px 25px;
+            display: inline-block;
+            border-radius: 15px;
+
+            svg {
+                margin-left: 10px;
+                font-size: 20px;
+                top: -2px;
+                position: relative;
+            }
+        }
+    }
+    .why-choose {
+        // Container styling
+        padding: 40px 0;
+        
+        // Heading styling
+        h2 {
+          font-weight: 700;  // Bold
+          font-size: 2rem;
+          margin-bottom: 30px;
+          position: relative;
+          
+          // Optional: Add an underline effect
+          &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 50px;
+            height: 3px;
+            background-color: #007bff;  // Or your theme color
+          }
+        }
+        ul {
+            margin: 25px 0;
+            padding-left: 0;
+            list-style: none;  // Removes default bullets
+            
+            li {
+              position: relative;
+              padding-left: 25px;  // Space for custom bullet
+              margin-bottom: 20px;
+              line-height: 1.6;
+              
+              // Custom bullet styling
+              &:before {
+                content: '•';  // Custom bullet point
+                position: absolute;
+                left: 0;
+                color: #007bff;  // Or your theme color
+                font-size: 1.2rem;
+              }
+            }
+        }
+    }
+}
+
+
+//Mobile Responsive
+@media (max-width: 575px){
+    .service-section {
+        .service-title-text {
+            padding-top: 0;
+            margin-bottom: 10px;
+        }
+    }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    .service-section {
+        .service-title-text {
+            padding-top: 0;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .service-section {
+        .service-title-text {
+            padding-top: 0;
+            margin-bottom: 30px;
+        }
+    }
+}

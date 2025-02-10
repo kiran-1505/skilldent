@@ -1,0 +1,73 @@
+@import '../../sass/colors.scss';
+
+.team-section {
+    .section-title {
+        h2 {
+            max-width: inherit;
+        }
+    }
+
+    .team-card {
+        background: #f8f9fa; // Light gray background
+        border-radius: 10px; // Rounded corners
+        padding: 20px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); // Light shadow
+        transition: transform 0.3s ease;
+        height: 100%; // Make all cards equal in height
+        display: flex;
+        flex-direction: column;
+        align-items: center; // Center content
+        text-align: center;
+      
+        img {
+            width: 100%; /* Ensure the image fills the container */
+            height: 100%;
+            object-fit: cover; /* Ensures the image is properly cropped */
+        }
+    
+        &:hover {
+            transform: translateY(-5px);
+        }
+    
+        .team-img {
+            width: 120px; // Fixed width
+            height: 120px; // Fixed height for uniformity
+            border-radius: 50%; // Makes the image circular
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+    
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+    
+        .team-description {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.5;
+            text-align: left; // Aligns only the description text to the left
+            width: 100%;
+        }
+    }
+    
+    // Ensure all team cards are of equal height
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .col-lg-3 {
+        display: flex;
+    }
+}
+
+// Small Device Responsive
+@media (max-width: 575px) {
+    .team-section {
+        .pt-5 {
+            padding-top: 0 !important;
+        }
+    }
+}
