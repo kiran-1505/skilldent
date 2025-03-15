@@ -1,0 +1,158 @@
+@import '../../sass/colors.scss';
+
+.clinical-section {
+    position: relative;
+    text-align: center;
+    padding: 120px 0 80px;
+    overflow: hidden;
+
+    .clinical-text {
+        margin-bottom: 50px;
+        
+        span {
+            color: $color-blue;
+            font-size: 18px;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 0;
+            color: $color-blue;
+        }
+    }
+
+    .clinical-services {
+        max-width: 1000px;
+        margin: 0 auto;
+
+        .single-service {
+            margin-bottom: 40px;
+            
+            .service-content {
+                display: flex;
+                align-items: flex-start;
+                text-align: left;
+                background-color: $color-white;
+                padding: 30px;
+                border-radius: 15px;
+                box-shadow: 0 0 20px rgba($color-blue, 0.1);
+                transition: all 0.3s ease;
+
+                &:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 5px 25px rgba($color-blue, 0.2);
+
+                    .icon {
+                        background-color: $color-blue;
+                        color: $color-white;
+                        transform: rotateY(360deg);
+                    }
+                }
+
+                .icon {
+                    flex-shrink: 0;
+                    width: 70px;
+                    height: 70px;
+                    line-height: 70px;
+                    text-align: center;
+                    background-color: rgba($color-blue, 0.1);
+                    border-radius: 50%;
+                    margin-right: 25px;
+                    color: $color-blue;
+                    font-size: 30px;
+                    transition: all 0.5s;
+                }
+
+                .service-text {
+                    flex-grow: 1;
+
+                    h3 {
+                        font-size: 24px;
+                        color: $color-black;
+                        margin-bottom: 15px;
+                        font-weight: 600;
+                    }
+
+                    p {
+                        font-size: 16px;
+                        color: $color-black;
+                        line-height: 1.7;
+                        margin: 0;
+                        white-space: pre-line;
+
+                        br {
+                            content: "";
+                            display: block;
+                            margin: 8px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Mobile Responsive
+@media (max-width: 767px) {
+    .clinical-section {
+        padding: 60px 0 40px;
+
+        .clinical-text {
+            margin-bottom: 30px;
+
+            h2 {
+                font-size: 32px;
+            }
+        }
+
+        .clinical-services {
+            .single-service {
+                margin-bottom: 30px;
+
+                .service-content {
+                    flex-direction: column;
+                    text-align: center;
+                    padding: 20px;
+
+                    .icon {
+                        margin: 0 auto 20px;
+                    }
+
+                    .service-text {
+                        h3 {
+                            font-size: 20px;
+                        }
+
+                        p {
+                            font-size: 14px;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Tablet Responsive
+@media (min-width: 768px) and (max-width: 991px) {
+    .clinical-section {
+        .clinical-text {
+            h2 {
+                font-size: 40px;
+            }
+        }
+
+        .clinical-services {
+            .single-service {
+                .service-content {
+                    padding: 25px;
+                }
+            }
+        }
+    }
+} 

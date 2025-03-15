@@ -6,17 +6,16 @@ import BlogCard from '../components/BlogCard/BlogCard';
 import BlogData from '../sections/Blogs/BlogData';
 
 const BlogsPage = () => {
-    
     return (
         <>
             <Navbar />
             <PageTitle />
-            <section className='pb-70' data-aos="fade-up" data-aos-duration="2000">
+            <section className='pb-70 pt-50' data-aos="fade-up" data-aos-duration="2000">
                 <div className="container">
-                    <div className="row">
-                        {
-                            BlogData.map(blog => <BlogCard blog={blog} />)
-                        }
+                    <div className="row g-4">
+                        {BlogData.map((blog, index) => (
+                            <BlogCard key={index} blog={blog} />
+                        ))}
                     </div>
                 </div>
             </section>
@@ -25,4 +24,4 @@ const BlogsPage = () => {
     );
 };
 
-export default BlogsPage;
+export default BlogsPage; 

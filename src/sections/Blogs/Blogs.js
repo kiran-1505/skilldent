@@ -5,7 +5,6 @@ import BlogCard from '../../components/BlogCard/BlogCard';
 import BlogData from './BlogData';
 
 const Blogs = () => {
-
     return (
         <section className='pt-100 pb-70 blog-section' data-aos="fade-up" data-aos-duration="2000">
             <div className="container">
@@ -16,7 +15,7 @@ const Blogs = () => {
 
                 <div className="row">
                     {
-                        BlogData.map (blog => <BlogCard blog={blog} />)
+                        BlogData.map(blog => <BlogCard key={blog.id} blog={blog} />)
                     }
                 </div>
             </div>
@@ -24,4 +23,4 @@ const Blogs = () => {
     );
 };
 
-export default Blogs;
+export default Blogs; 

@@ -1,13 +1,14 @@
 import React from 'react';
 import Navbar from '../components/Navbar/Navbar';
+import Clinical from '../sections/Clinical/Clinical';
 import Footer from '../sections/Footer/Footer';
-import ServiceBanner from '../sections/ServiceBanner/ServiceBanner';
 
 const Services = () => {
     return (
         <>
             <Navbar />
-            <ServiceBanner />
+            <br></br>
+            <Clinical />
             <Footer />
         </>
     );

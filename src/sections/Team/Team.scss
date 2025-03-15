@@ -1,73 +1,182 @@
 @import '../../sass/colors.scss';
 
 .team-section {
+    padding: 100px 0;
+    background: rgba($color-blue, 0.02);
+
     .section-title {
+        margin-bottom: 50px;
+
         h2 {
-            max-width: inherit;
+            font-size: 48px;
+            font-weight: 700;
+            color: $color-blue;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 80%;
+                height: 3px;
+                background-color: $color-blue;
+                opacity: 0.3;
+            }
         }
     }
 
-    .team-card {
-        background: #f8f9fa; // Light gray background
-        border-radius: 10px; // Rounded corners
-        padding: 20px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); // Light shadow
-        transition: transform 0.3s ease;
-        height: 100%; // Make all cards equal in height
-        display: flex;
-        flex-direction: column;
-        align-items: center; // Center content
-        text-align: center;
-      
-        img {
-            width: 100%; /* Ensure the image fills the container */
-            height: 100%;
-            object-fit: cover; /* Ensures the image is properly cropped */
+    .team-members {
+        .team-member {
+            display: flex;
+            align-items: center;
+            background: $color-white;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 20px rgba($color-blue, 0.08);
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: translateY(-5px);
+            }
+
+            .member-photo {
+                flex: 0 0 250px;
+                margin-right: 30px;
+                text-align: center;
+                padding-top: 20px;
+
+                img {
+                    width: 200px;
+                    height: 200px;
+                    object-fit: cover;
+                    object-position: center 30%;
+                    border-radius: 15px;
+                    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                    margin-bottom: 15px;
+                }
+
+                h3 {
+                    font-size: 20px;
+                    font-weight: 700;
+                    color: $color-blue;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .member-info {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                height: 100%;
+                padding: 0 20px;
+
+                .bio {
+                    font-size: 16px;
+                    line-height: 1.8;
+                    color: #333333;
+                    margin: 0;
+                    font-weight: 400;
+                }
+            }
         }
-    
-        &:hover {
-            transform: translateY(-5px);
-        }
-    
-        .team-img {
-            width: 120px; // Fixed width
-            height: 120px; // Fixed height for uniformity
-            border-radius: 50%; // Makes the image circular
-            overflow: hidden;
-            margin-bottom: 15px;
-        }
-    
-        h3 {
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-    
-        .team-description {
-            font-size: 14px;
-            color: #555;
-            line-height: 1.5;
-            text-align: left; // Aligns only the description text to the left
-            width: 100%;
-        }
-    }
-    
-    // Ensure all team cards are of equal height
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .col-lg-3 {
-        display: flex;
     }
 }
 
-// Small Device Responsive
+// Mobile Responsive
 @media (max-width: 575px) {
     .team-section {
-        .pt-5 {
-            padding-top: 0 !important;
+        padding: 60px 0;
+
+        .section-title {
+            h2 {
+                font-size: 32px;
+            }
+        }
+
+        .team-members {
+            .team-member {
+                flex-direction: column;
+                padding: 20px;
+                margin-bottom: 25px;
+
+                .member-photo {
+                    flex: none;
+                    width: 100%;
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                    padding-top: 15px;
+
+                    img {
+                        width: 150px;
+                        height: 150px;
+                        margin-bottom: 12px;
+                        object-position: center 30%;
+                    }
+
+                    h3 {
+                        font-size: 18px;
+                    }
+                }
+
+                .member-info {
+                    padding: 0;
+                    display: block;
+
+                    .bio {
+                        font-size: 15px;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Tablet Responsive
+@media (min-width: 576px) and (max-width: 991px) {
+    .team-section {
+        padding: 80px 0;
+
+        .section-title {
+            h2 {
+                font-size: 36px;
+            }
+        }
+
+        .team-members {
+            .team-member {
+                padding: 25px;
+                margin-bottom: 30px;
+
+                .member-photo {
+                    flex: 0 0 200px;
+                    margin-right: 25px;
+
+                    img {
+                        width: 160px;
+                        height: 160px;
+                        margin-bottom: 12px;
+                        object-position: center 30%;
+                    }
+
+                    h3 {
+                        font-size: 18px;
+                    }
+                }
+
+                .member-info {
+                    padding: 0 15px;
+
+                    .bio {
+                        font-size: 15px;
+                    }
+                }
+            }
         }
     }
 }

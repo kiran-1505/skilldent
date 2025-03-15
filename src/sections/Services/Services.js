@@ -14,26 +14,14 @@ const Services = () => {
                         <p>
                             To provide high-quality dental education and training that equips students with the skills, knowledge, and confidence to succeed in their dental careers.
                         </p>
-
-                        <h2>Why Choose SkillDent Dental Academy?</h2>
-      
-                        <ul>
-                            <ul>Comprehensive Education</ul>
-                                <li>Wide range of courses : SkillDent offers a variety of dental courses, guided by renowned experts in the respective fields. </li>
-                                <li>Curriculum designed by experts : Our curriculum is crafted by experienced dental professionals to ensure students receive a well-rounded education.</li>
-                            <ul>Expert Faculty</ul>
-                                <li>Experienced and qualified faculty : Our faculty consists of seasoned dental professionals with a passion for teaching and mentoring.</li>
-                                <li>Faculty with international exposure : Many of our faculty members have international experience, providing students with a global perspective.</li>
-                            <ul>State-of-the-Art Infrastructure </ul>
-                                <li>⁠Modern dental clinics : Our clinics are equipped with the latest dental equipment and technology, providing students with hands-on experience.</li>
-                                <li>Spacious and well-equipped classrooms : Our classrooms are designed to facilitate interactive learning and feature state-of-the-art audio-visual equipment.</li>
-                            <ul>Practical Training</ul>
-                                <li>Extensive clinical exposure : Students gain hands-on experience in our dental clinics, working with patients under the supervision of experienced faculty.</li>
-                                <li>Simulation-based training : We offer simulation-based training to help students develop their clinical skills in a controlled environment.</li>
-                            <ul>Location and Accessibility</ul>
-                                <li>Convenient location : Our campus is located in a convenient and accessible area, with ample parking and transportation options.</li>
-                                <li>State-of-the-art facilities : Our campus features modern facilities, including a library, auditorium, and recreational spaces.</li>
-                        </ul>
+                        <h2>Core Values</h2>
+                    <ul>
+                        <li>Excellence : We strive for excellence in all aspects of dental education and practice.</li>
+                        <li>Innovation : We encourage creativity, critical thinking, and innovation in dental education and research.</li>
+                        <li>⁠Compassion : We foster a culture of compassion, empathy, and respect for patients, students, and colleagues.</li>
+                        <li>⁠Integrity : We uphold the highest standards of integrity, ethics, and professionalism in all our endeavors.</li>
+                        <li>⁠Collaboration : We promote collaboration and teamwork among students, faculty, and dental professionals to achieve common goals.</li>
+                    </ul>
                     </div>
                 </div>   
             </div>

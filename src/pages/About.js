@@ -1,8 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import AboutBanner from '../sections/AboutBanner/AboutBanner';
-import Priority from '../sections/Priority/Priority';
-import Safety from '../sections/Safety/Safety';
+import WhyChooseUs from '../sections/Safety/WhyChooseUs';
 import Team from '../sections/Team/Team';
 import Footer from '../sections/Footer/Footer';
 
@@ -11,8 +10,7 @@ const About = () => {
         <>
             <Navbar />
             <AboutBanner />
-            <Priority />
-            <Safety />
+            <WhyChooseUs />
             <Team />
             <Footer />
         </>

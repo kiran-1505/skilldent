@@ -1,0 +1,66 @@
+// Global styles
+body {
+    margin: 0;
+    padding: 0;
+}
+
+// Add padding to main content sections
+.section-common {
+    padding-top: 80px !important; // Reduced from 120px
+    min-height: 100vh;
+}
+
+// Special handling for banner section
+.banner-section {
+    padding-top: 100px !important; // Reduced from 180px
+    min-height: calc(100vh - 60px); // Adjusted for smaller navbar
+}
+
+// Contact page specific padding
+.contact-section {
+    padding-top: 120px !important;
+    
+    .contact-info {
+        margin-top: 30px;
+    }
+}
+
+// About page specific padding
+.about-section {
+    padding-top: 120px !important;
+    
+    .about-banner-text {
+        margin-top: 30px;
+    }
+}
+
+// Responsive adjustments
+@media (max-width: 991px) {
+    .section-common {
+        padding-top: 70px !important; // Reduced from 100px
+    }
+
+    .banner-section {
+        padding-top: 90px !important; // Reduced from 140px
+    }
+
+    .contact-section,
+    .about-section {
+        padding-top: 100px !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .section-common {
+        padding-top: 60px !important; // Reduced from 80px
+    }
+
+    .banner-section {
+        padding-top: 80px !important; // Reduced from 120px
+    }
+
+    .contact-section,
+    .about-section {
+        padding-top: 90px !important;
+    }
+}

@@ -39,12 +39,12 @@ const Footer = () => {
         },
         {
             'title': 'Open Hour',
-            'info': '09:00 AM - 18:00 PM',
+            'info': '09:00 AM - 05:00 PM',
             'icon': time
         },
         {
             'title': 'Clinic Address',
-            'info': '2ND Floor, Malkala Samudhya Bhavana, Jayanagar 4th T Block, Bangalore',
+            'info': '2ND Floor, Malkala Samudhya Bhavana, Beside RGUHS, 26th Main Road, Jayanagar 4th T Block, Bangalore - 560041',
             'icon': location
         }
     ]

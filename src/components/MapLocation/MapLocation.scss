@@ -1,0 +1,47 @@
+@import '../../sass/colors.scss';
+
+.map-location {
+    background-color: $color-white;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 1px solid rgba($color-blue, 0.1);
+
+    .location-link {
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+        color: $color-blue;
+        font-size: 16px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: darken($color-blue, 10%);
+            transform: translateY(-2px);
+        }
+
+        .map-icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+
+        span {
+            position: relative;
+
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                width: 0;
+                height: 1px;
+                background-color: $color-blue;
+                transition: width 0.3s ease;
+            }
+        }
+
+        &:hover span:after {
+            width: 100%;
+        }
+    }
+} 

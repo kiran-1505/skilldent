@@ -1,62 +1,172 @@
-@import './../../sass//colors.scss';
+@import '../../../src/sass/colors.scss';
 
-.academic-card {
-    border: 1px solid #dddddd;
-    padding: 25px;
-    border-radius: 32px;
-    margin-bottom: 20px;
+.blog-card {
+    background: $color-white;
+    border-radius: 12px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 15px rgba($color-blue, 0.1);
+    width: calc(33.333% - 20px); // 3 cards per row with gap consideration
 
-    .academic-img { 
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 25px rgba($color-blue, 0.2);
+
+        .blog-img {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .blog-img {
+        overflow: hidden;
+        border-radius: 12px 12px 0 0;
         position: relative;
-        margin-bottom: 20px;
+        padding-top: 65%; // This creates a 3:2 aspect ratio
+        background-color: #f5f5f5;
 
-        .date {
+        img {
             position: absolute;
-            top: 15px;
-            left: 15px;
-            background: $color-white;
-            border-radius: 15px;
-            text-align: center;
-            padding: 15px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.3s ease;
+            loading: "lazy"; // For better performance
+        }
+    }
 
-            h6 {
-                font-size: 16px;
+    .blog-text {
+        padding: 25px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+
+        span {
+            margin-bottom: 10px;
+            
+            a {
+                font-size: 14px;
                 font-weight: 600;
-                margin-bottom: 0px;
+                color: $color-blue;
+                text-decoration: none;
+                background-color: rgba($color-blue, 0.1);
+                padding: 5px 15px;
+                border-radius: 20px;
+
+                &:hover {
+                    color: $color-black;
+                    background-color: rgba($color-blue, 0.15);
+                }
+            }
+        }
+
+        h3 {
+            margin: 0 0 15px 0;
+            min-height: 60px;
+            
+            a {
+                font-size: 20px;
+                font-weight: 700;
+                color: $color-black;
+                text-decoration: none;
+                transition: all 0.3s ease;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                line-height: 1.5;
+
+                &:hover {
+                    color: $color-blue;
+                }
+            }
+        }
+
+        p {
+            font-size: 15px;
+            line-height: 1.7;
+            margin: 0;
+            color: #666;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            flex-grow: 1;
+        }
+    }
+}
+
+// Tablet styles
+@media (max-width: 991px) {
+    .blog-card {
+        width: calc(50% - 15px); // 2 cards per row
+        
+        .blog-text {
+            padding: 20px;
+            
+            h3 {
+                min-height: 54px;
+                
+                a {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+// Mobile styles
+@media (max-width: 767px) {
+    .blog-card {
+        width: 100%; // 1 card per row
+        
+        .blog-text {
+            padding: 20px;
+
+            h3 {
+                min-height: auto;
+                margin-bottom: 10px;
+                
+                a {
+                    font-size: 18px;
+                }
             }
 
             p {
-                margin-bottom: 0;
+                font-size: 14px;
+                -webkit-line-clamp: 2; // Show less text on mobile
+            }
+
+            span a {
                 font-size: 12px;
-                font-weight: 600;
+                padding: 4px 12px;
             }
         }
     }
-
-    span {
-        a {
-            color: $color-blue;
-            text-transform: uppercase;
-            font-size: 14px;
-            font-weight: 600;
-            text-decoration: none;
-            margin-bottom: 10px;
-            display: inline-block;
-        }
-    }
-
-    h3 {
-        a {
-            text-decoration: none;
-            color: $color-black;
-            font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 20px;
-            display: inline-block;
-        }
-    }
-
-    p {
-        font-size: 15px;
-    }
 }
+
+// Small mobile styles
+@media (max-width: 480px) {
+    .blog-card {
+        .blog-img {
+            padding-top: 56.25%; // 16:9 aspect ratio for smaller screens
+        }
+        
+        .blog-text {
+            padding: 15px;
+            
+            h3 a {
+                font-size: 16px;
+            }
+            
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+} 

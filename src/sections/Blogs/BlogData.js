@@ -1,75 +1,53 @@
-import imgOne from '../../assets/blogs/1.png';
-import imgTwo from '../../assets/blogs/2.png';
-import imgThree from '../../assets/blogs/3.png';
-import imgFour from '../../assets/blogs/2.png';
-import imgFive from '../../assets/blogs/3.png';
-import imgSix from '../../assets/blogs/1.png';
-import imgSeven from '../../assets/blogs/5.png';
-import imgEight from '../../assets/blogs/6.png';
-import imgNine from '../../assets/blogs/2.png';
-import imgTen from '../../assets/blogs/1.png';
+import imgOne from '../../assets/blogs/basicendo.png';
+import imgTwo from '../../assets/blogs/advanced endo.png';
+import imgThree from '../../assets/blogs/basic2.png';
+import imgFour from '../../assets/blogs/digital-smile.png';
+import imgFive from '../../assets/blogs/implant-.png';
+import imgSix from '../../assets/blogs/full-mouth-rehabilitation.png';
 
 const BlogData = [
     {
         'img': imgOne,
-        'url': 'esthetic-treatment-and-smile-designing',
-        'title':'Esthetic Treatment and Smile Designing ',
-        'description':'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing ',
+        'url': 'endodontic-course-basic',
+        'title': 'Endodontic Course - Basic',
+        'description': 'Lectures on Root Canal Anatomy, Access Opening, Biomechanical Preparartion and Obturation. Demo and Hands on - Pre-molars and Molars.',
+        'category': 'Basic Endodontics'
     },
-     {
+    {
         'img': imgTwo,
-        'url':'root-canal-treatment',
-        'title':'Root Canal Treatment',
-        'description':'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing ',
+        'url': 'root-canal-treatment',
+        'title': 'Endodontic Course - Advanced',
+        'description': 'Lectures, Rubber dam placement, Advanced Irrigation Techniques, 3-D Obturation. Demo and Hands on - Pre-molars and Molars.',
+        'category': 'Advanced Endodontics'
     },
     {
         'img': imgThree,
-        'url':'dental-hygiene-for-all-age-to-make-smile',
-        'title':'Dental Hygiene for All Age to Make Smile',
-        'description':'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing ',
+        'url': 'aesthetic-dentistry-basic',
+        'title': 'Aesthetic Dentistry - Basic',
+        'description': 'Lecture on Composites, Bonding and Layering Techniques. Demo and Hands on - Anterior Composite Class 3 and 4',
+        'category': 'Basic Dentistry'
     },
     {
         'img': imgFour,
-        'url': 'complete-and-partial-dentures',
-        'title':'Complete and Partial Dentures',
-        'description':'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing ',
+        'url': 'aesthetic-dentistry-advanced',
+        'title': 'Aesthetic Dentistry - Advanced',
+        'description': 'Lecture on Composites, Bonding and Layering Techniques. Demo and Hands on - Anterior and Posterior composites, Digital Smile designing.',
+        'category': 'Cosmetic Dentistry'
     },
     {
         'img': imgFive,
-        'url': 'crowns-and-bridges',
-        'title':'Crowns and Bridges',
-        'description':'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing ',
+        'url': 'implantology-fellowship-program',
+        'title': 'Implantology Fellowship Program',
+        'description': 'Patient Evaluation and treatment planning. Surgical Phase. Prosthetic Phase. Complications and Risk Management',
+        'category': 'Implantology'
     },
     {
         'img': imgSix,
-        'url': 'orthodontics-braces',
-        'title':'Orthodontics (Braces)',
-        'description':'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing ',
-    },
-    {
-        'img': imgSeven,
-        'url': 'extraction-and-minor-oral-surgical-procedures',
-        'title':'Extraction and Minor Oral Surgical Procedures',
-        'description':'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing ',
-    },
-    {
-        'img': imgEight,
-        'url': 'dental-implants',
-        'title':'Dental Implants',
-        'description':'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing ',
-    },
-    {
-        'img': imgNine,
-        'url': 'laser-therapy',
-        'title':'Laser Therapy',
-        'description':'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing ',
-    },
-    {
-        'img': imgTen,
-        'url': 'teeth-cleaning',
-        'title':'Teeth Cleaning (Scaling)',
-        'description':'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing ',
-    },
+        'url': 'full-mouth-rehabilitation',
+        'title': 'Full Mouth Rehabilitation',
+        'description': 'Case Selection and Diagnosis, Management Strategies',
+        'category': 'Rehabilitation'
+    }
 ];
 
-export default BlogData;
+export default BlogData; 

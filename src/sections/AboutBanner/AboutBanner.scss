@@ -1,47 +1,258 @@
+@import '../../sass/colors.scss';
+
 .about-section {
-    height: 750px;
+    min-height: 100vh;
+    padding: 120px 0 80px;
+    overflow: hidden;
     
     .about-banner-text {
         h2 {
             font-size: 60px;
             font-weight: 700;
             margin-bottom: 30px;
-        }
-        
-        h3 {
-            font-size: 45px;
-            margin-bottom: 20px;
-            font-weight: 700;
+            color: $color-blue;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        p {
-            margin-bottom: 50px;
-            color: #181945;
-            font-family: 'Montserrat', sans-serif;;
-            font-size: 20px;
-        }
-    }
+        .about-content {
+            margin-top: 30px;
 
+            .vision-section,
+            .mission-section {
+                background: rgba($color-blue, 0.03);
+                border-radius: 15px;
+                padding: 30px;
+                margin-bottom: 30px;
+                box-shadow: 0 4px 15px rgba($color-blue, 0.08);
+                transition: transform 0.3s ease;
 
-    .about-banner-img {
-        text-align: center;
-        position: relative;
+                &:hover {
+                    transform: translateY(-5px);
+                }
+            }
 
-        img {
-            margin: 0 10px;
+            .vision-section {
+                h3 {
+                    font-size: 32px;
+                    color: $color-blue;
+                    margin-bottom: 20px;
+                    position: relative;
+                    display: inline-block;
 
-            &:nth-child(2) {
-                margin-top: 120px;
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        bottom: -8px;
+                        left: 0;
+                        width: 100%;
+                        height: 3px;
+                        background-color: $color-blue;
+                        opacity: 0.3;
+                    }
+                }
+
+                .vision-text {
+                    font-size: 17px;
+                    line-height: 1.8;
+                    color: $color-black;
+                    background: rgba($color-blue, 0.08);
+                    padding: 25px;
+                    border-radius: 12px;
+                    margin: 15px 0;
+                    box-shadow: 0 3px 15px rgba($color-blue, 0.1);
+                    border-bottom: 2px solid $color-blue;
+                    position: relative;
+                    font-weight: 500;
+                }
+            }
+
+            .mission-section {
+                h3 {
+                    font-size: 32px;
+                    color: $color-blue;
+                    margin-bottom: 20px;
+                    position: relative;
+                    display: inline-block;
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        bottom: -8px;
+                        left: 0;
+                        width: 100%;
+                        height: 3px;
+                        background-color: $color-blue;
+                        opacity: 0.3;
+                    }
+                }
+
+                .mission-text {
+                    font-size: 17px;
+                    line-height: 1.8;
+                    color: $color-black;
+                    background: rgba($color-blue, 0.08);
+                    padding: 25px;
+                    border-radius: 12px;
+                    margin: 15px 0;
+                    box-shadow: 0 3px 15px rgba($color-blue, 0.1);
+                    border-bottom: 2px solid $color-blue;
+                    position: relative;
+                    font-weight: 500;
+                }
+
+                .mission-objectives {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 20px;
+                    padding: 0;
+                    margin: 25px 0 0;
+                    list-style: none;
+
+                    li {
+                        background: $color-white;
+                        padding: 20px;
+                        border-radius: 12px;
+                        color: $color-black;
+                        font-size: 15px;
+                        text-align: left;
+                        box-shadow: 0 2px 8px rgba($color-blue, 0.1);
+                        transition: all 0.3s ease;
+
+                        .objective-title {
+                            display: block;
+                            color: $color-blue;
+                            font-weight: 600;
+                            font-size: 17px;
+                            margin-bottom: 10px;
+                        }
+
+                        p {
+                            line-height: 1.6;
+                            margin: 0;
+                            font-size: 15px;
+                        }
+
+                        &:hover {
+                            transform: translateY(-3px);
+                            box-shadow: 0 4px 15px rgba($color-blue, 0.15);
+                        }
+                    }
+                }
+            }
+
+            .about-banner-img {
+                position: relative;
+                height: 100%;
+                min-height: 600px;
+                padding: 20px;
+                background: rgba($color-blue, 0.03);
+                border-radius: 20px;
+                box-shadow: 0 4px 15px rgba($color-blue, 0.08);
+
+                .image-stack {
+                    position: relative;
+                    height: 100%;
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 30px;
+
+                    .image-1 {
+                        width: 100%;
+                        height: 300px;
+                        object-fit: cover;
+                        border-radius: 15px;
+                        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                        transition: transform 0.3s ease;
+                        z-index: 2;
+
+                        &:hover {
+                            transform: translateY(-5px);
+                        }
+                    }
+
+                    .image-2 {
+                        width: 100%;
+                        height: 250px;
+                        object-fit: cover;
+                        border-radius: 15px;
+                        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                        transition: transform 0.3s ease;
+                        z-index: 1;
+
+                        &:hover {
+                            transform: translateY(-5px);
+                        }
+                    }
+
+                    .pattern {
+                        width: 200px;
+                        height: 200px;
+                        object-fit: contain;
+                        border-radius: 15px;
+                        opacity: 0.1;
+                        z-index: 0;
+                    }
+                }
+
+                .frame-border {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    border: 2px solid rgba($color-blue, 0.1);
+                    border-radius: 20px;
+                    z-index: 1;
+                    pointer-events: none;
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        top: 15px;
+                        left: 15px;
+                        right: 15px;
+                        bottom: 15px;
+                        border: 1px dashed rgba($color-blue, 0.2);
+                        border-radius: 15px;
+                    }
+                }
             }
         }
+    }
+}
 
-        .pattern {
-            position: absolute;
-            left: 0;
-            right: 0;
-            margin: auto;
-            bottom: 0;
-            z-index: -1;
+// Mobile Responsive
+@media (max-width: 991px) {
+    .about-section {
+        .about-banner-text {
+            .about-content {
+                .about-banner-img {
+                    margin-top: 30px;
+                    min-height: 500px;
+
+                    .image-stack {
+                        padding: 15px;
+                        gap: 25px;
+
+                        .image-1 {
+                            height: 250px;
+                        }
+
+                        .image-2 {
+                            height: 200px;
+                        }
+
+                        .pattern {
+                            width: 150px;
+                            height: 150px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -49,94 +260,91 @@
 // Mobile Responsive
 @media (max-width: 575px) {
     .about-section {
-        text-align: center;
-        height: 100%;
-        padding-top: 70px;
-
-        .about-banner-text {
-            margin-bottom: 20px;
-
-            h2 {
-                font-size: 40px;
-                margin-bottom: 15px;
-            }
-
-            p {
-                margin-bottom: 25px;
-            }
-        }
-
-        .about-banner-img {
-            img {
-                &:nth-child(2) {
-                    margin-top: 10px;
-                }
-            }
-        }
-    }
-}
-
-@media (min-width: 576px) and (max-width: 767px) {
-    .about-section {
-        text-align: center;
-        height: 100%;
-        padding-top: 70px;
-
-        .about-banner-text {
-            margin-bottom: 20px;
-
-            h2 {
-                font-size: 40px;
-                margin-bottom: 15px;
-            }
-
-            p {
-                margin-bottom: 25px;
-            }
-        }
-
-        .about-banner-img {
-            img {
-                max-width: 170px;
-                &:nth-child(2) {
-                    margin-top: 10px;
-                }
-            }
-        }
-    }
-}
-
-// Medium Responsive
-@media (min-width: 768px) and (max-width: 991px) {
-    .about-section {
-        text-align: center;
-        height: 100%;
-        padding: 100px 0;
+        padding: 80px 0 40px;
 
         .about-banner-text {
             h2 {
-                font-size: 40px;
-                margin-bottom: 10px;
-            }
-
-            p {
-                font-size: 16px;
+                font-size: 36px;
                 margin-bottom: 20px;
+                text-align: center;
+            }
+
+            .about-content {
+                .vision-section,
+                .mission-section {
+                    padding: 20px;
+                    margin-bottom: 20px;
+
+                    h3 {
+                        font-size: 26px;
+                        text-align: center;
+                        display: block;
+                        width: 100%;
+                    }
+
+                    .vision-text,
+                    .mission-text {
+                        font-size: 15px;
+                        padding: 20px;
+                    }
+
+                    .mission-objectives {
+                        grid-template-columns: 1fr;
+                        gap: 15px;
+                    }
+                }
+
+                .about-banner-img {
+                    padding: 15px;
+                    margin-top: 30px;
+
+                    .image-stack {
+                        .image-1 {
+                            height: 200px;
+                        }
+
+                        .image-2 {
+                            height: 180px;
+                            margin-top: -100px;
+                            margin-left: 30px;
+                        }
+
+                        .pattern {
+                            width: 150px;
+                            height: 150px;
+                            right: -30px;
+                            bottom: -30px;
+                        }
+                    }
+                }
             }
         }
     }
 }
 
-// Large Responsive
-@media (min-width: 992px) and (max-width: 1199px) {
+// Tablet Responsive
+@media (min-width: 576px) and (max-width: 991px) {
     .about-section {
-        height: 100%;
-        padding: 100px 0;
+        .about-banner-text {
+            h2 {
+                font-size: 48px;
+            }
 
-        .about-banner-img {
-            img {
-                max-width: 180px;
+            .about-content {
+                .about-banner-img {
+                    .image-stack {
+                        .image-1 {
+                            height: 250px;
+                        }
+
+                        .image-2 {
+                            height: 220px;
+                            margin-top: -120px;
+                            margin-left: 40px;
+                        }
+                    }
+                }
             }
         }
     }
-}
+} 
