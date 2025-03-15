@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/skilldent/static/css/main.5635489f.css",
-    "main.js": "/skilldent/static/js/main.e0c183c5.js",
+    "main.js": "/skilldent/static/js/main.2e0ab41d.js",
     "static/js/453.a8e360da.chunk.js": "/skilldent/static/js/453.a8e360da.chunk.js",
     "static/media/basic2.png": "/skilldent/static/media/basic2.5ee22b00df1d140b6688.png",
     "static/media/8-arvind.png": "/skilldent/static/media/8-arvind.f4cc3403f75de111fc0f.png",
@@ -31,11 +31,11 @@
     "static/media/pattern_02.png": "/skilldent/static/media/pattern_02.b4699407d2ecbc775edb.png",
     "index.html": "/skilldent/index.html",
     "main.5635489f.css.map": "/skilldent/static/css/main.5635489f.css.map",
-    "main.e0c183c5.js.map": "/skilldent/static/js/main.e0c183c5.js.map",
+    "main.2e0ab41d.js.map": "/skilldent/static/js/main.2e0ab41d.js.map",
     "453.a8e360da.chunk.js.map": "/skilldent/static/js/453.a8e360da.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5635489f.css",
-    "static/js/main.e0c183c5.js"
+    "static/js/main.2e0ab41d.js"
   ]
 }
