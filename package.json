@@ -2,7 +2,7 @@
   "name": "skilldent",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://kiran-1505.github.io/skilldent/",
+  "homepage": "/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
