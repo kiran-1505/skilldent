@@ -1,25 +1,74 @@
+# SkillDent Clinic Management System
 
-# Dentalist - Dental Clinic React Website
+A modern, TypeScript-based dental clinic management system designed to streamline patient care, appointment scheduling, and clinic operations.
 
-**Dentalist** is a Modern Responsive Website for Dental Clinic. It is built
-with ReactJS, Bootstrap, and Sass. Dental clinic can use
-this template to bring their business online or increase business visibility.
+## Features
 
-## Live View
-[Dentalist](https://dentalist.netlify.app/)
+- 📅 Appointment Management
+- 👥 Patient Records Management
+- 🏥 Treatment Planning
+- 💊 Prescription Management
+- 📊 Clinic Analytics
+- 📱 Responsive Design
 
 ## Tech Stack
-React, Bootstrap, SASS, React Router, React Slick, React Icons and AOS
 
-**Hosting:** Netlify
+- **Frontend:**
+  - TypeScript
+  - React.js
+  - Next.js
+  - Tailwind CSS
+  - Material UI
 
-## Website Features
+- **Development Tools:**
+  - ESLint
+  - Prettier
+  - Git
 
-- Fully Responsive
-- Built with React
-- Bootstrap 5
-- Speed Optimized
-- Smooth Animation
+## Getting Started
 
-## Source File - Figma 
-Design credit [Flowbase](https://www.figma.com/community/file/1148521097072918819).
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/skilldent-clinic.git
+   cd skilldent-clinic
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser**
+   Navigate to `http://localhost:3000`
+
+## Project Structure
+
+```
+skilldent-clinic/
+├── app/              # Next.js app directory
+├── components/       # Reusable UI components
+├── lib/             # Utility functions and helpers
+├── public/          # Static assets
+└── styles/          # Global styles and CSS modules
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Support
+
+For support, please email support@skilldent.com or open an issue in the repository.
