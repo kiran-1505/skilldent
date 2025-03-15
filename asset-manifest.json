@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/skilldent/static/css/main.5635489f.css",
+    "main.js": "/skilldent/static/js/main.e0c183c5.js",
+    "static/js/453.a8e360da.chunk.js": "/skilldent/static/js/453.a8e360da.chunk.js",
+    "static/media/basic2.png": "/skilldent/static/media/basic2.5ee22b00df1d140b6688.png",
+    "static/media/8-arvind.png": "/skilldent/static/media/8-arvind.f4cc3403f75de111fc0f.png",
+    "static/media/12-bhargavi.png": "/skilldent/static/media/12-bhargavi.a87e9a60550089e4841c.png",
+    "static/media/13-shishirsingh.png": "/skilldent/static/media/13-shishirsingh.1815e7a3c4dc7fae95f6.png",
+    "static/media/implant-.png": "/skilldent/static/media/implant-.210d0e3f6ec5c8f85cb0.png",
+    "static/media/6-ashwin.png": "/skilldent/static/media/6-ashwin.8d023fe09d8d2dd38920.png",
+    "static/media/5-bolla.png": "/skilldent/static/media/5-bolla.4d8e2a618bfbaf5e052b.png",
+    "static/media/2-madhu.png": "/skilldent/static/media/2-madhu.3b59ceda2df0da8d22b8.png",
+    "static/media/14-uthkal.png": "/skilldent/static/media/14-uthkal.28eb757037a31e6ac37f.png",
+    "static/media/4-kumar.png": "/skilldent/static/media/4-kumar.d12a78a15a4c44050143.png",
+    "static/media/3-esha.png": "/skilldent/static/media/3-esha.f84d72a533bc8f7b0c96.png",
+    "static/media/3.png": "/skilldent/static/media/3.cd89185188c70a3900be.png",
+    "static/media/9-adarsh.png": "/skilldent/static/media/9-adarsh.576f14c67f3f92a8bce2.png",
+    "static/media/7-ponappa.png": "/skilldent/static/media/7-ponappa.4181dfd5c66693314a0e.png",
+    "static/media/skilldentlogo.png": "/skilldent/static/media/skilldentlogo.56790447b8b7f5a1967f.png",
+    "static/media/banner5.png": "/skilldent/static/media/banner5.6c60bf2f0d0f0eea331a.png",
+    "static/media/10-priyamariam.png": "/skilldent/static/media/10-priyamariam.ccd8ff700fe538fdf369.png",
+    "static/media/banner4.png": "/skilldent/static/media/banner4.e8502411e6c1ed6595c4.png",
+    "static/media/1-Mohan.png": "/skilldent/static/media/1-Mohan.c27efb6e776350beb0ff.png",
+    "static/media/digital-smile.png": "/skilldent/static/media/digital-smile.eac2a26b2524d31eadd6.png",
+    "static/media/banner3.png": "/skilldent/static/media/banner3.300482f37cc0bfcf7659.png",
+    "static/media/11-appajigouda.png": "/skilldent/static/media/11-appajigouda.04789ff40ee2dbeef333.png",
+    "static/media/full-mouth-rehabilitation.png": "/skilldent/static/media/full-mouth-rehabilitation.2450eb1f936d31f4dcd7.png",
+    "static/media/basicendo.png": "/skilldent/static/media/basicendo.d0a9d9ff3c2cae687d1b.png",
+    "static/media/advanced endo.png": "/skilldent/static/media/advanced endo.f6d75514ffd189147d85.png",
+    "static/media/pattern_02.png": "/skilldent/static/media/pattern_02.b4699407d2ecbc775edb.png",
+    "index.html": "/skilldent/index.html",
+    "main.5635489f.css.map": "/skilldent/static/css/main.5635489f.css.map",
+    "main.e0c183c5.js.map": "/skilldent/static/js/main.e0c183c5.js.map",
+    "453.a8e360da.chunk.js.map": "/skilldent/static/js/453.a8e360da.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5635489f.css",
+    "static/js/main.e0c183c5.js"
+  ]
+}
