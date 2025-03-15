@@ -1,7 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import Banner from '../sections/Banner/Banner';
-import Services from '../sections/Services/Services';
 import WhyChooseUs from '../sections/Safety/WhyChooseUs';
 import Team from '../sections/Team/Team';
 import Footer from '../sections/Footer/Footer';
