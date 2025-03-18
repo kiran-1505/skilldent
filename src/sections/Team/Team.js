@@ -15,6 +15,7 @@ import imgEleven from '../../assets/about/team/11-appajigouda.png';
 import imgTwelve from '../../assets/about/team/12-bhargavi.png';
 import imgThirteen from '../../assets/about/team/13-shishirsingh.png';
 import imgFourteen from '../../assets/about/team/14-uthkal.png';
+import imgFifteen from '../../assets/about/team/hari-15.png';
 
 const Team = () => {
     const teams = [
@@ -72,6 +73,11 @@ const Team = () => {
             'img': imgSix,
             'name': 'Dr Ashwin P S',
             'description': 'Dr Ashwin P S, a Periodontist and Implantologist, is currently associated with Curaden, India as an education consultant, conducting iTOP workshop at various institutions and clinics in the country. He is research oriented and has got numerous publications under his name, and has also authored the book on the topic PERIODONTAL DRESSING.'
+        },
+        {
+            'img': imgFifteen,
+            'name': 'Dr Hari Prasad',
+            'description': 'Dr. Hari Prasad MDS (Conservative Dentistry & Endodontics), GDC Bangalore Renowned Endodontist with 5 years in general dentistry and 3 years in specialized endodontics. As a dedicated educator, he is also the co-founder of SkillDent Academy, where he has conducted over 15 hands-on endodontic courses, sharing his knowledge and honing the skills of fellow dental professionals.'
         },
         {
             'img': imgTen,
