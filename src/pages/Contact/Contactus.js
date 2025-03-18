@@ -53,7 +53,7 @@ const Contactus = () => {
                                         <FaEnvelope className="icon" />
                                         <div className="info-content">
                                             <h4>Email</h4>
-                                            <p>info@skilldent.com</p>
+                                            <p>Skilldentacademy@gmail.com</p>
                                         </div>
                                     </div>
                                 </div>
