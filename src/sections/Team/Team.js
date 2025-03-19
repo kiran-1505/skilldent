@@ -83,7 +83,7 @@ const Team = () => {
         {
             'img': imgSixteen,
             'name': 'Dr. Preetham H S'
-            'description': 'Dr. Preetham H S, MDS (Conservative Dentistry & Endodontics), GDC Bangalore, is a renowned Endodontist with special interests towards Aesthetic dentistry and Microendodontics. He is also a mentor at SkillDent Academy, uplifting the knowledge of the fellow dental professionals. His outstanding contributions to the field have been recognized through numerous awards at national conferences, while his research has been published in esteemed national and international journals.'
+            'description': 'Dr. Hari Prasad, MDS (Conservative Dentistry & Endodontics), GDC Bangalore Renowned Endodontist with 5 years in general dentistry and 3 years in specialized endodontics. As a dedicated educator, he is also the co-founder of SkillDent Academy, where he has conducted over 15 hands-on endodontic courses, sharing his knowledge and honing the skills of fellow dental professionals.'
         },
         {
             'img': imgTen,
