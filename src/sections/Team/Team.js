@@ -16,7 +16,7 @@ import imgTwelve from '../../assets/about/team/12-bhargavi.png';
 import imgThirteen from '../../assets/about/team/13-shishirsingh.png';
 import imgFourteen from '../../assets/about/team/14-uthkal.png';
 import imgFifteen from '../../assets/about/team/hari-15.png';
-import imgSixteen from '../../assets/about/team/preetham.png';
+import imgSixteen from '../../assets/about/team/Preetham.png';
 
 const Team = () => {
     const teams = [
