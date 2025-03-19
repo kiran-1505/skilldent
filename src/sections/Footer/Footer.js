@@ -61,7 +61,7 @@ const Footer = () => {
                             <ul>
                                 <li><a href="/"><FaFacebookF/></a></li>
                                 <li><a href="/"><FaTwitter/></a></li>
-                                <li><a href="/"><FaInstagram/></a></li>
+                                <li><a href="https://www.instagram.com/skilldent_academy?igsh=MWJhY2RxN3RyendlMQ=="><FaInstagram/></a></li>
                             </ul>
                         </div>
                     </div>
